@@ -20,6 +20,7 @@
 		157A4828159BF00B005F6DEF /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A4826159BF00B005F6DEF /* default.png */; };
 		157A4829159BF00B005F6DEF /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A4827159BF00B005F6DEF /* default@2x.png */; };
 		157A482B159BF3C8005F6DEF /* tabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A482A159BF3C8005F6DEF /* tabBar.png */; };
+		157A4832159D0BA2005F6DEF /* CustomCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157A4831159D0BA2005F6DEF /* CustomCellView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		157A4826159BF00B005F6DEF /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = default.png; path = "../../../../../../../Dropbox/icon/App Icon [Rounded]/default.png"; sourceTree = "<group>"; };
 		157A4827159BF00B005F6DEF /* default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "default@2x.png"; path = "../../../../../../../Dropbox/icon/App Icon [Rounded]/default@2x.png"; sourceTree = "<group>"; };
 		157A482A159BF3C8005F6DEF /* tabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabBar.png; path = "../../../../../../../Dropbox/icon/App Icon [Rounded]/tabBar.png"; sourceTree = "<group>"; };
+		157A4831159D0BA2005F6DEF /* CustomCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCellView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				157A480F159BEC50005F6DEF /* ViewController.m */,
 				157A4811159BEC50005F6DEF /* ViewController.xib */,
 				157A4803159BEC50005F6DEF /* Supporting Files */,
+				157A4831159D0BA2005F6DEF /* CustomCellView.xib */,
 			);
 			path = Project1;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				157A4828159BF00B005F6DEF /* default.png in Resources */,
 				157A4829159BF00B005F6DEF /* default@2x.png in Resources */,
 				157A482B159BF3C8005F6DEF /* tabBar.png in Resources */,
+				157A4832159D0BA2005F6DEF /* CustomCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
