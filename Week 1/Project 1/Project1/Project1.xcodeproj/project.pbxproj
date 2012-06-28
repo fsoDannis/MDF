@@ -107,10 +107,10 @@
 				157A480E159BEC50005F6DEF /* ViewController.h */,
 				157A480F159BEC50005F6DEF /* ViewController.m */,
 				157A4811159BEC50005F6DEF /* ViewController.xib */,
-				157A4803159BEC50005F6DEF /* Supporting Files */,
 				157A4831159D0BA2005F6DEF /* CustomCellView.xib */,
 				157A483C159D1AEE005F6DEF /* CustomTableCell.h */,
 				157A483D159D1AEE005F6DEF /* CustomTableCell.m */,
+				157A4803159BEC50005F6DEF /* Supporting Files */,
 			);
 			path = Project1;
 			sourceTree = "<group>";

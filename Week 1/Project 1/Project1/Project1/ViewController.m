@@ -19,26 +19,27 @@
 {
     
     myArray = [[NSMutableArray alloc] initWithObjects:
-                 @"1",
-                 @"2",
-                 @"3",
-                 @"4",
-                 @"5",
-                 @"6",
-                 @"7",
-                 @"8",
-                 @"9",
-                 @"10",
-                 @"11",
-                 @"12",
-                 @"13",
-                 @"14",
-                 @"15",
-                 @"16",
-                 @"17",
-                 @"18",
-                 @"19",
-                 @"20",
+                 @"Dan",
+                 @"Emily",
+                 @"Alex",
+                 @"Makenzie",
+                 @"Chris",
+                 @"Sarah",
+                 @"Natalie",
+                 @"Kate",
+                 @"Max",
+                 @"Angela",
+                 @"Bobby",
+                 @"Issac",
+                 @"Dominick",
+                 @"Lucas",
+                 @"Anthony",
+                 @"Andrew",
+                 @"Stephanie",
+                 @"Lynn",
+                 @"Ken",
+                 @"Tina",
+                 @"Jeff",
                  nil];
     
     [super viewDidLoad];
@@ -56,37 +57,57 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+
+- (IBAction)Edit:(id)sender
+{
+    if (tableView.editing == NO)
+    {
+        [tableView setEditing:YES];
+    }
+    else
+        [tableView setEditing:NO];
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        NSLog(@"Deleted row - %@", [myArray objectAtIndex:indexPath.row]);
+        [myArray removeObjectAtIndex:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 20;
+    return [myArray count];
 }
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView2 cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
     
-    CustomTableCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil)
     {
-        //Not needed with Custom Cell Creation
-        //cell =[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        
-        NSArray *views = [[NSBundle mainBundle] loadNibNamed:@"CustomCellView" owner:nil options:nil];
-        
-        for (UIView *view in views)
-        {
-            if([view isKindOfClass:[CustomTableCell class]])
-            {
-                cell.contentView.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"customcell.png"]];
-                cell = (CustomTableCell*)view;
-                cell.textLabel.text = (NSString*)[myArray objectAtIndex:indexPath.row];
-              
-            }
-        }
+        cell =[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     cell.textLabel.text=(NSString*)[myArray objectAtIndex:indexPath.row];
     
     return cell;
 }
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"Index Row = %d Index name= %@",indexPath.row, [myArray objectAtIndex:indexPath.row]);
+}
+
 
 @end
