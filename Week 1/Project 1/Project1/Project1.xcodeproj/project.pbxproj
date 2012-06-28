@@ -24,7 +24,7 @@
 		157A4834159D0D5A005F6DEF /* customcellleft.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A4833159D0D5A005F6DEF /* customcellleft.png */; };
 		157A4836159D0DFA005F6DEF /* cellBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A4835159D0DFA005F6DEF /* cellBg.png */; };
 		157A4838159D0F17005F6DEF /* customcellright.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A4837159D0F17005F6DEF /* customcellright.png */; };
-		157A483B159D0F9A005F6DEF /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 157A483A159D0F9A005F6DEF /* Cell.m */; };
+		157A483E159D1AEE005F6DEF /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 157A483D159D1AEE005F6DEF /* CustomTableCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,8 +50,8 @@
 		157A4833159D0D5A005F6DEF /* customcellleft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = customcellleft.png; path = "../../../../../../../Dropbox/icon/App Icon [Rounded]/customcellleft.png"; sourceTree = "<group>"; };
 		157A4835159D0DFA005F6DEF /* cellBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cellBg.png; path = "../../../../../../../Dropbox/icon/App Icon [Rounded]/cellBg.png"; sourceTree = "<group>"; };
 		157A4837159D0F17005F6DEF /* customcellright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = customcellright.png; path = "../../../../../../../Dropbox/icon/App Icon [Rounded]/customcellright.png"; sourceTree = "<group>"; };
-		157A4839159D0F9A005F6DEF /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
-		157A483A159D0F9A005F6DEF /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
+		157A483C159D1AEE005F6DEF /* CustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableCell.h; sourceTree = "<group>"; };
+		157A483D159D1AEE005F6DEF /* CustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +109,8 @@
 				157A4811159BEC50005F6DEF /* ViewController.xib */,
 				157A4803159BEC50005F6DEF /* Supporting Files */,
 				157A4831159D0BA2005F6DEF /* CustomCellView.xib */,
-				157A4839159D0F9A005F6DEF /* Cell.h */,
-				157A483A159D0F9A005F6DEF /* Cell.m */,
+				157A483C159D1AEE005F6DEF /* CustomTableCell.h */,
+				157A483D159D1AEE005F6DEF /* CustomTableCell.m */,
 			);
 			path = Project1;
 			sourceTree = "<group>";
@@ -213,7 +213,7 @@
 				157A4809159BEC50005F6DEF /* main.m in Sources */,
 				157A480D159BEC50005F6DEF /* AppDelegate.m in Sources */,
 				157A4810159BEC50005F6DEF /* ViewController.m in Sources */,
-				157A483B159D0F9A005F6DEF /* Cell.m in Sources */,
+				157A483E159D1AEE005F6DEF /* CustomTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

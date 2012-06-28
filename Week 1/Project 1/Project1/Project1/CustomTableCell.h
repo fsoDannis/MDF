@@ -1,5 +1,5 @@
 //
-//  Cell.h
+//  CustomTableCell.h
 //  Project1
 //
 //  Created by Annis Dan on 6/28/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Cell : UITableViewCell
+@interface CustomTableCell : UITableViewCell
 
 @end

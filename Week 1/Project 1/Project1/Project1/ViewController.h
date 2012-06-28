@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    IBOutlet UITableView *tableView;
+    NSMutableArray *myArray;
+}
 
 @end

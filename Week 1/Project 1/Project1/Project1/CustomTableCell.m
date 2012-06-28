@@ -1,14 +1,14 @@
 //
-//  Cell.m
+//  CustomTableCell.m
 //  Project1
 //
 //  Created by Annis Dan on 6/28/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "Cell.h"
+#import "CustomTableCell.h"
 
-@implementation Cell
+@implementation CustomTableCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
