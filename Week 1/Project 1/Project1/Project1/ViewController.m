@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Cell.h"
 
 @interface ViewController ()
 
@@ -30,5 +31,7 @@
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
+
+
 
 @end

@@ -21,6 +21,10 @@
 		157A4829159BF00B005F6DEF /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A4827159BF00B005F6DEF /* default@2x.png */; };
 		157A482B159BF3C8005F6DEF /* tabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A482A159BF3C8005F6DEF /* tabBar.png */; };
 		157A4832159D0BA2005F6DEF /* CustomCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157A4831159D0BA2005F6DEF /* CustomCellView.xib */; };
+		157A4834159D0D5A005F6DEF /* customcellleft.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A4833159D0D5A005F6DEF /* customcellleft.png */; };
+		157A4836159D0DFA005F6DEF /* cellBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A4835159D0DFA005F6DEF /* cellBg.png */; };
+		157A4838159D0F17005F6DEF /* customcellright.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A4837159D0F17005F6DEF /* customcellright.png */; };
+		157A483B159D0F9A005F6DEF /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 157A483A159D0F9A005F6DEF /* Cell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,11 @@
 		157A4827159BF00B005F6DEF /* default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "default@2x.png"; path = "../../../../../../../Dropbox/icon/App Icon [Rounded]/default@2x.png"; sourceTree = "<group>"; };
 		157A482A159BF3C8005F6DEF /* tabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabBar.png; path = "../../../../../../../Dropbox/icon/App Icon [Rounded]/tabBar.png"; sourceTree = "<group>"; };
 		157A4831159D0BA2005F6DEF /* CustomCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCellView.xib; sourceTree = "<group>"; };
+		157A4833159D0D5A005F6DEF /* customcellleft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = customcellleft.png; path = "../../../../../../../Dropbox/icon/App Icon [Rounded]/customcellleft.png"; sourceTree = "<group>"; };
+		157A4835159D0DFA005F6DEF /* cellBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cellBg.png; path = "../../../../../../../Dropbox/icon/App Icon [Rounded]/cellBg.png"; sourceTree = "<group>"; };
+		157A4837159D0F17005F6DEF /* customcellright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = customcellright.png; path = "../../../../../../../Dropbox/icon/App Icon [Rounded]/customcellright.png"; sourceTree = "<group>"; };
+		157A4839159D0F9A005F6DEF /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		157A483A159D0F9A005F6DEF /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +99,9 @@
 		157A4802159BEC50005F6DEF /* Project1 */ = {
 			isa = PBXGroup;
 			children = (
+				157A4837159D0F17005F6DEF /* customcellright.png */,
+				157A4835159D0DFA005F6DEF /* cellBg.png */,
+				157A4833159D0D5A005F6DEF /* customcellleft.png */,
 				157A480B159BEC50005F6DEF /* AppDelegate.h */,
 				157A480C159BEC50005F6DEF /* AppDelegate.m */,
 				157A480E159BEC50005F6DEF /* ViewController.h */,
@@ -97,6 +109,8 @@
 				157A4811159BEC50005F6DEF /* ViewController.xib */,
 				157A4803159BEC50005F6DEF /* Supporting Files */,
 				157A4831159D0BA2005F6DEF /* CustomCellView.xib */,
+				157A4839159D0F9A005F6DEF /* Cell.h */,
+				157A483A159D0F9A005F6DEF /* Cell.m */,
 			);
 			path = Project1;
 			sourceTree = "<group>";
@@ -183,6 +197,9 @@
 				157A4829159BF00B005F6DEF /* default@2x.png in Resources */,
 				157A482B159BF3C8005F6DEF /* tabBar.png in Resources */,
 				157A4832159D0BA2005F6DEF /* CustomCellView.xib in Resources */,
+				157A4834159D0D5A005F6DEF /* customcellleft.png in Resources */,
+				157A4836159D0DFA005F6DEF /* cellBg.png in Resources */,
+				157A4838159D0F17005F6DEF /* customcellright.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +213,7 @@
 				157A4809159BEC50005F6DEF /* main.m in Sources */,
 				157A480D159BEC50005F6DEF /* AppDelegate.m in Sources */,
 				157A4810159BEC50005F6DEF /* ViewController.m in Sources */,
+				157A483B159D0F9A005F6DEF /* Cell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
