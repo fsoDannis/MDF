@@ -19,7 +19,7 @@
 - (void)viewDidLoad
 {
     
-     detailScreen.frame = CGRectMake(-320.0f, 0.0f, detailScreen.frame.size.width, detailScreen.frame.size.height);
+    detailScreen.frame = CGRectMake(-320.0f, 0.0f, detailScreen.frame.size.width, detailScreen.frame.size.height);
     
     myArray = [[NSMutableArray alloc] initWithObjects:
                  @"Dan",
@@ -117,7 +117,17 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:2.0];
+    detailScreen.frame = CGRectMake(0.0f, 0.0f, detailScreen.frame.size.width, detailScreen.frame.size.height);
+    
+    [UIView commitAnimations];
+    
     NSLog(@"Index Row = %d Index name= %@",indexPath.row, [myArray objectAtIndex:indexPath.row]);
+    
+
 }
 
 
@@ -127,6 +137,15 @@
     [UIView setAnimationDuration:2.0];
 
     detailScreen.frame = CGRectMake(-320.0f, 0.0f, detailScreen.frame.size.width, detailScreen.frame.size.height);
+    [UIView commitAnimations];
+}
+
+- (IBAction)info:(id)sender
+{
+    [UIView beginAnimations:nil context:nil];
+
+    detailScreen.frame = CGRectMake(0.0f, 0.0f, detailScreen.frame.size.width, detailScreen.frame.size.height);
+    
     [UIView commitAnimations];
 }
 

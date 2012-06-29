@@ -17,7 +17,7 @@
 }
 - (IBAction)Edit:(id)sender;
 - (IBAction)Done:(id)sender;
-
+- (IBAction)info:(id)sender;
 
 
 @end
