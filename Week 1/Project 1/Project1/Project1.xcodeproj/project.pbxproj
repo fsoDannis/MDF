@@ -25,6 +25,9 @@
 		157A4836159D0DFA005F6DEF /* cellBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A4835159D0DFA005F6DEF /* cellBg.png */; };
 		157A4838159D0F17005F6DEF /* customcellright.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A4837159D0F17005F6DEF /* customcellright.png */; };
 		157A483E159D1AEE005F6DEF /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 157A483D159D1AEE005F6DEF /* CustomTableCell.m */; };
+		157A485C159D38A6005F6DEF /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 157A485A159D38A6005F6DEF /* DetailView.m */; };
+		157A485D159D38A6005F6DEF /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157A485B159D38A6005F6DEF /* DetailView.xib */; };
+		157A485F159D3949005F6DEF /* detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A485E159D3949005F6DEF /* detail.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,10 @@
 		157A4837159D0F17005F6DEF /* customcellright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = customcellright.png; path = "../../../../../../../Dropbox/icon/App Icon [Rounded]/customcellright.png"; sourceTree = "<group>"; };
 		157A483C159D1AEE005F6DEF /* CustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableCell.h; sourceTree = "<group>"; };
 		157A483D159D1AEE005F6DEF /* CustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableCell.m; sourceTree = "<group>"; };
+		157A4859159D38A6005F6DEF /* DetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailView.h; sourceTree = "<group>"; };
+		157A485A159D38A6005F6DEF /* DetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailView.m; sourceTree = "<group>"; };
+		157A485B159D38A6005F6DEF /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		157A485E159D3949005F6DEF /* detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = detail.png; path = "../../../../../../../Dropbox/icon/App Icon [Rounded]/detail.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +80,6 @@
 			children = (
 				157A4819159BEE40005F6DEF /* Resources */,
 				157A4802159BEC50005F6DEF /* Project1 */,
-				157A47FB159BEC50005F6DEF /* Frameworks */,
 				157A47F9159BEC50005F6DEF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +100,7 @@
 				157A4800159BEC50005F6DEF /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		157A4802159BEC50005F6DEF /* Project1 */ = {
@@ -104,6 +111,10 @@
 				157A4833159D0D5A005F6DEF /* customcellleft.png */,
 				157A480B159BEC50005F6DEF /* AppDelegate.h */,
 				157A480C159BEC50005F6DEF /* AppDelegate.m */,
+				157A485E159D3949005F6DEF /* detail.png */,
+				157A4859159D38A6005F6DEF /* DetailView.h */,
+				157A485A159D38A6005F6DEF /* DetailView.m */,
+				157A485B159D38A6005F6DEF /* DetailView.xib */,
 				157A480E159BEC50005F6DEF /* ViewController.h */,
 				157A480F159BEC50005F6DEF /* ViewController.m */,
 				157A4811159BEC50005F6DEF /* ViewController.xib */,
@@ -111,6 +122,7 @@
 				157A483C159D1AEE005F6DEF /* CustomTableCell.h */,
 				157A483D159D1AEE005F6DEF /* CustomTableCell.m */,
 				157A4803159BEC50005F6DEF /* Supporting Files */,
+				157A47FB159BEC50005F6DEF /* Frameworks */,
 			);
 			path = Project1;
 			sourceTree = "<group>";
@@ -200,6 +212,8 @@
 				157A4834159D0D5A005F6DEF /* customcellleft.png in Resources */,
 				157A4836159D0DFA005F6DEF /* cellBg.png in Resources */,
 				157A4838159D0F17005F6DEF /* customcellright.png in Resources */,
+				157A485D159D38A6005F6DEF /* DetailView.xib in Resources */,
+				157A485F159D3949005F6DEF /* detail.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +228,7 @@
 				157A480D159BEC50005F6DEF /* AppDelegate.m in Sources */,
 				157A4810159BEC50005F6DEF /* ViewController.m in Sources */,
 				157A483E159D1AEE005F6DEF /* CustomTableCell.m in Sources */,
+				157A485C159D38A6005F6DEF /* DetailView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
