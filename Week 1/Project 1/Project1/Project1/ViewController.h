@@ -8,12 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITableViewDelegate>
+@interface ViewController : UIViewController <UITableViewDelegate> 
 {
     IBOutlet UITableView *tableView;
     NSMutableArray *myArray;
     
 }
 - (IBAction)Edit:(id)sender;
+
+
+
 
 @end

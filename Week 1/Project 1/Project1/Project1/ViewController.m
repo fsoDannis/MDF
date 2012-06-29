@@ -7,13 +7,16 @@
 //
 
 #import "ViewController.h"
-#import "CustomTableCell.h"
+
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
+
+
 
 - (void)viewDidLoad
 {
@@ -48,6 +51,10 @@
 
 - (void)viewDidUnload
 {
+ 
+    tableView = nil;
+    
+
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -68,6 +75,12 @@
         [tableView setEditing:NO];
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [myArray count];
+}
+
+
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return UITableViewCellEditingStyleDelete;
@@ -83,13 +96,9 @@
     }
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return [myArray count];
-}
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView2 cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
     
@@ -97,6 +106,8 @@
     if (cell == nil)
     {
         cell =[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+
+        
     }
     cell.textLabel.text=(NSString*)[myArray objectAtIndex:indexPath.row];
     
