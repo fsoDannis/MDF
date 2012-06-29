@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		157A47FD159BEC50005F6DEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157A47FC159BEC50005F6DEF /* UIKit.framework */; };
+		157A47FF159BEC50005F6DEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157A47FE159BEC50005F6DEF /* Foundation.framework */; };
+		157A4801159BEC50005F6DEF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 157A4800159BEC50005F6DEF /* CoreGraphics.framework */; };
+		157A4807159BEC50005F6DEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 157A4805159BEC50005F6DEF /* InfoPlist.strings */; };
+		157A4809159BEC50005F6DEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 157A4808159BEC50005F6DEF /* main.m */; };
+		157A480D159BEC50005F6DEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 157A480C159BEC50005F6DEF /* AppDelegate.m */; };
+		157A4810159BEC50005F6DEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 157A480F159BEC50005F6DEF /* ViewController.m */; };
+		157A4813159BEC50005F6DEF /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157A4811159BEC50005F6DEF /* ViewController.xib */; };
+		157A4832159D0BA2005F6DEF /* CustomCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157A4831159D0BA2005F6DEF /* CustomCellView.xib */; };
+		157A483E159D1AEE005F6DEF /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 157A483D159D1AEE005F6DEF /* CustomTableCell.m */; };
+		157A4872159D4922005F6DEF /* Emily Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4871159D4922005F6DEF /* Emily Annis.jpg */; };
+		157A4874159D4BD9005F6DEF /* Dan Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4873159D4BD9005F6DEF /* Dan Annis.jpg */; };
+		157A4885159D51A3005F6DEF /* Alex Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4875159D51A2005F6DEF /* Alex Annis.jpg */; };
+		157A4886159D51A3005F6DEF /* Andrew Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4876159D51A2005F6DEF /* Andrew Annis.jpg */; };
+		157A4887159D51A3005F6DEF /* Angela Frisch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4877159D51A2005F6DEF /* Angela Frisch.jpg */; };
+		157A4888159D51A3005F6DEF /* Anthony Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4878159D51A2005F6DEF /* Anthony Annis.jpg */; };
+		157A4889159D51A3005F6DEF /* Bobby Frisch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4879159D51A2005F6DEF /* Bobby Frisch.jpg */; };
+		157A488A159D51A3005F6DEF /* Chad Cunningham.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A487A159D51A2005F6DEF /* Chad Cunningham.jpg */; };
+		157A488B159D51A3005F6DEF /* Chris Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A487B159D51A2005F6DEF /* Chris Annis.jpg */; };
+		157A488C159D51A3005F6DEF /* Isaac Frisch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A487C159D51A3005F6DEF /* Isaac Frisch.jpg */; };
+		157A488D159D51A3005F6DEF /* Jeff Mascari.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A487D159D51A3005F6DEF /* Jeff Mascari.jpg */; };
+		157A488E159D51A3005F6DEF /* Ken Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A487E159D51A3005F6DEF /* Ken Annis.jpg */; };
+		157A488F159D51A3005F6DEF /* Lynn Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A487F159D51A3005F6DEF /* Lynn Annis.jpg */; };
+		157A4890159D51A3005F6DEF /* Natalie Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4880159D51A3005F6DEF /* Natalie Annis.jpg */; };
+		157A4891159D51A3005F6DEF /* Saif Iqbal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4881159D51A3005F6DEF /* Saif Iqbal.jpg */; };
+		157A4892159D51A3005F6DEF /* Sarah Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4882159D51A3005F6DEF /* Sarah Annis.jpg */; };
+		157A4893159D51A3005F6DEF /* Stephanie Mascari.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4883159D51A3005F6DEF /* Stephanie Mascari.jpg */; };
+		157A4894159D51A3005F6DEF /* Tina Mascari.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4884159D51A3005F6DEF /* Tina Mascari.jpg */; };
+		157A4896159D5218005F6DEF /* Makenzie Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4895159D5218005F6DEF /* Makenzie Annis.jpg */; };
+		157A4898159D536A005F6DEF /* Kate Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4897159D536A005F6DEF /* Kate Annis.jpg */; };
+		157A48A4159D5775005F6DEF /* cellBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A489B159D5774005F6DEF /* cellBg.png */; };
+		157A48A5159D5775005F6DEF /* customcellleft.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A489C159D5774005F6DEF /* customcellleft.png */; };
+		157A48A6159D5775005F6DEF /* customcellright.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A489D159D5774005F6DEF /* customcellright.png */; };
+		157A48AA159D5775005F6DEF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A48A1159D5775005F6DEF /* Icon.png */; };
+		157A48AF159D5A3A005F6DEF /* detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A48AD159D5A3A005F6DEF /* detail.png */; };
+		157A48B0159D5A3A005F6DEF /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A48AE159D5A3A005F6DEF /* info.png */; };
+		157A48B8159E2759005F6DEF /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A48B7159E2759005F6DEF /* Icon@2x.png */; };
+		157A48BB159E27B9005F6DEF /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A48BA159E27B9005F6DEF /* default@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		157A47F8159BEC50005F6DEF /* Project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		157A47FC159BEC50005F6DEF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		157A47FE159BEC50005F6DEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		157A4800159BEC50005F6DEF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		157A4804159BEC50005F6DEF /* Project1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Project1-Info.plist"; sourceTree = "<group>"; };
+		157A4806159BEC50005F6DEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		157A4808159BEC50005F6DEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		157A480A159BEC50005F6DEF /* Project1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Project1-Prefix.pch"; sourceTree = "<group>"; };
+		157A480B159BEC50005F6DEF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		157A480C159BEC50005F6DEF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		157A480E159BEC50005F6DEF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		157A480F159BEC50005F6DEF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		157A4812159BEC50005F6DEF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		157A4831159D0BA2005F6DEF /* CustomCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCellView.xib; sourceTree = "<group>"; };
+		157A483C159D1AEE005F6DEF /* CustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableCell.h; sourceTree = "<group>"; };
+		157A483D159D1AEE005F6DEF /* CustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableCell.m; sourceTree = "<group>"; };
+		157A4871159D4922005F6DEF /* Emily Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Emily Annis.jpg"; sourceTree = "<group>"; };
+		157A4873159D4BD9005F6DEF /* Dan Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Dan Annis.jpg"; sourceTree = "<group>"; };
+		157A4875159D51A2005F6DEF /* Alex Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Alex Annis.jpg"; sourceTree = "<group>"; };
+		157A4876159D51A2005F6DEF /* Andrew Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Andrew Annis.jpg"; sourceTree = "<group>"; };
+		157A4877159D51A2005F6DEF /* Angela Frisch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Angela Frisch.jpg"; sourceTree = "<group>"; };
+		157A4878159D51A2005F6DEF /* Anthony Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Anthony Annis.jpg"; sourceTree = "<group>"; };
+		157A4879159D51A2005F6DEF /* Bobby Frisch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bobby Frisch.jpg"; sourceTree = "<group>"; };
+		157A487A159D51A2005F6DEF /* Chad Cunningham.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Chad Cunningham.jpg"; sourceTree = "<group>"; };
+		157A487B159D51A2005F6DEF /* Chris Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Chris Annis.jpg"; sourceTree = "<group>"; };
+		157A487C159D51A3005F6DEF /* Isaac Frisch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Isaac Frisch.jpg"; sourceTree = "<group>"; };
+		157A487D159D51A3005F6DEF /* Jeff Mascari.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jeff Mascari.jpg"; sourceTree = "<group>"; };
+		157A487E159D51A3005F6DEF /* Ken Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ken Annis.jpg"; sourceTree = "<group>"; };
+		157A487F159D51A3005F6DEF /* Lynn Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lynn Annis.jpg"; sourceTree = "<group>"; };
+		157A4880159D51A3005F6DEF /* Natalie Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Natalie Annis.jpg"; sourceTree = "<group>"; };
+		157A4881159D51A3005F6DEF /* Saif Iqbal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Saif Iqbal.jpg"; sourceTree = "<group>"; };
+		157A4882159D51A3005F6DEF /* Sarah Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sarah Annis.jpg"; sourceTree = "<group>"; };
+		157A4883159D51A3005F6DEF /* Stephanie Mascari.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Stephanie Mascari.jpg"; sourceTree = "<group>"; };
+		157A4884159D51A3005F6DEF /* Tina Mascari.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tina Mascari.jpg"; sourceTree = "<group>"; };
+		157A4895159D5218005F6DEF /* Makenzie Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Makenzie Annis.jpg"; sourceTree = "<group>"; };
+		157A4897159D536A005F6DEF /* Kate Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Kate Annis.jpg"; sourceTree = "<group>"; };
+		157A489B159D5774005F6DEF /* cellBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellBg.png; sourceTree = "<group>"; };
+		157A489C159D5774005F6DEF /* customcellleft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customcellleft.png; sourceTree = "<group>"; };
+		157A489D159D5774005F6DEF /* customcellright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customcellright.png; sourceTree = "<group>"; };
+		157A48A1159D5775005F6DEF /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		157A48AD159D5A3A005F6DEF /* detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detail.png; sourceTree = "<group>"; };
+		157A48AE159D5A3A005F6DEF /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		157A48B7159E2759005F6DEF /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		157A48BA159E27B9005F6DEF /* default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		157A47F5159BEC50005F6DEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157A47FD159BEC50005F6DEF /* UIKit.framework in Frameworks */,
+				157A47FF159BEC50005F6DEF /* Foundation.framework in Frameworks */,
+				157A4801159BEC50005F6DEF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		157A47ED159BEC50005F6DEF = {
+			isa = PBXGroup;
+			children = (
+				157A4819159BEE40005F6DEF /* Resources */,
+				157A4802159BEC50005F6DEF /* Project1 */,
+				157A47F9159BEC50005F6DEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		157A47F9159BEC50005F6DEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				157A47F8159BEC50005F6DEF /* Project1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		157A47FB159BEC50005F6DEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				157A47FC159BEC50005F6DEF /* UIKit.framework */,
+				157A47FE159BEC50005F6DEF /* Foundation.framework */,
+				157A4800159BEC50005F6DEF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		157A4802159BEC50005F6DEF /* Project1 */ = {
+			isa = PBXGroup;
+			children = (
+				157A48B2159D5C9F005F6DEF /* customCellImages */,
+				157A48B1159D5C74005F6DEF /* detailImages */,
+				157A480B159BEC50005F6DEF /* AppDelegate.h */,
+				157A480C159BEC50005F6DEF /* AppDelegate.m */,
+				157A480E159BEC50005F6DEF /* ViewController.h */,
+				157A480F159BEC50005F6DEF /* ViewController.m */,
+				157A4811159BEC50005F6DEF /* ViewController.xib */,
+				157A483C159D1AEE005F6DEF /* CustomTableCell.h */,
+				157A483D159D1AEE005F6DEF /* CustomTableCell.m */,
+				157A4831159D0BA2005F6DEF /* CustomCellView.xib */,
+				157A4803159BEC50005F6DEF /* Supporting Files */,
+				157A47FB159BEC50005F6DEF /* Frameworks */,
+			);
+			path = Project1;
+			sourceTree = "<group>";
+		};
+		157A4803159BEC50005F6DEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				157A4804159BEC50005F6DEF /* Project1-Info.plist */,
+				157A4805159BEC50005F6DEF /* InfoPlist.strings */,
+				157A4808159BEC50005F6DEF /* main.m */,
+				157A480A159BEC50005F6DEF /* Project1-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		157A4819159BEE40005F6DEF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				157A48BA159E27B9005F6DEF /* default@2x.png */,
+				157A48B7159E2759005F6DEF /* Icon@2x.png */,
+				157A4877159D51A2005F6DEF /* Angela Frisch.jpg */,
+				157A48AE159D5A3A005F6DEF /* info.png */,
+				157A48A1159D5775005F6DEF /* Icon.png */,
+			);
+			name = Resources;
+			path = Project1;
+			sourceTree = "<group>";
+		};
+		157A48B1159D5C74005F6DEF /* detailImages */ = {
+			isa = PBXGroup;
+			children = (
+				157A4875159D51A2005F6DEF /* Alex Annis.jpg */,
+				157A4876159D51A2005F6DEF /* Andrew Annis.jpg */,
+				157A4878159D51A2005F6DEF /* Anthony Annis.jpg */,
+				157A4897159D536A005F6DEF /* Kate Annis.jpg */,
+				157A4879159D51A2005F6DEF /* Bobby Frisch.jpg */,
+				157A487A159D51A2005F6DEF /* Chad Cunningham.jpg */,
+				157A487B159D51A2005F6DEF /* Chris Annis.jpg */,
+				157A487C159D51A3005F6DEF /* Isaac Frisch.jpg */,
+				157A487D159D51A3005F6DEF /* Jeff Mascari.jpg */,
+				157A487E159D51A3005F6DEF /* Ken Annis.jpg */,
+				157A487F159D51A3005F6DEF /* Lynn Annis.jpg */,
+				157A4880159D51A3005F6DEF /* Natalie Annis.jpg */,
+				157A4881159D51A3005F6DEF /* Saif Iqbal.jpg */,
+				157A4882159D51A3005F6DEF /* Sarah Annis.jpg */,
+				157A4883159D51A3005F6DEF /* Stephanie Mascari.jpg */,
+				157A4884159D51A3005F6DEF /* Tina Mascari.jpg */,
+				157A4873159D4BD9005F6DEF /* Dan Annis.jpg */,
+				157A4871159D4922005F6DEF /* Emily Annis.jpg */,
+				157A4895159D5218005F6DEF /* Makenzie Annis.jpg */,
+			);
+			name = detailImages;
+			sourceTree = "<group>";
+		};
+		157A48B2159D5C9F005F6DEF /* customCellImages */ = {
+			isa = PBXGroup;
+			children = (
+				157A489D159D5774005F6DEF /* customcellright.png */,
+				157A489B159D5774005F6DEF /* cellBg.png */,
+				157A489C159D5774005F6DEF /* customcellleft.png */,
+				157A48AD159D5A3A005F6DEF /* detail.png */,
+			);
+			name = customCellImages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		157A47F7159BEC50005F6DEF /* Project1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 157A4816159BEC50005F6DEF /* Build configuration list for PBXNativeTarget "Project1" */;
+			buildPhases = (
+				157A47F4159BEC50005F6DEF /* Sources */,
+				157A47F5159BEC50005F6DEF /* Frameworks */,
+				157A47F6159BEC50005F6DEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Project1;
+			productName = Project1;
+			productReference = 157A47F8159BEC50005F6DEF /* Project1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		157A47EF159BEC50005F6DEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 157A47F2159BEC50005F6DEF /* Build configuration list for PBXProject "Project1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 157A47ED159BEC50005F6DEF;
+			productRefGroup = 157A47F9159BEC50005F6DEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				157A47F7159BEC50005F6DEF /* Project1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		157A47F6159BEC50005F6DEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157A4807159BEC50005F6DEF /* InfoPlist.strings in Resources */,
+				157A4813159BEC50005F6DEF /* ViewController.xib in Resources */,
+				157A4832159D0BA2005F6DEF /* CustomCellView.xib in Resources */,
+				157A4872159D4922005F6DEF /* Emily Annis.jpg in Resources */,
+				157A4874159D4BD9005F6DEF /* Dan Annis.jpg in Resources */,
+				157A4885159D51A3005F6DEF /* Alex Annis.jpg in Resources */,
+				157A4886159D51A3005F6DEF /* Andrew Annis.jpg in Resources */,
+				157A4887159D51A3005F6DEF /* Angela Frisch.jpg in Resources */,
+				157A4888159D51A3005F6DEF /* Anthony Annis.jpg in Resources */,
+				157A4889159D51A3005F6DEF /* Bobby Frisch.jpg in Resources */,
+				157A488A159D51A3005F6DEF /* Chad Cunningham.jpg in Resources */,
+				157A488B159D51A3005F6DEF /* Chris Annis.jpg in Resources */,
+				157A488C159D51A3005F6DEF /* Isaac Frisch.jpg in Resources */,
+				157A488D159D51A3005F6DEF /* Jeff Mascari.jpg in Resources */,
+				157A488E159D51A3005F6DEF /* Ken Annis.jpg in Resources */,
+				157A488F159D51A3005F6DEF /* Lynn Annis.jpg in Resources */,
+				157A4890159D51A3005F6DEF /* Natalie Annis.jpg in Resources */,
+				157A4891159D51A3005F6DEF /* Saif Iqbal.jpg in Resources */,
+				157A4892159D51A3005F6DEF /* Sarah Annis.jpg in Resources */,
+				157A4893159D51A3005F6DEF /* Stephanie Mascari.jpg in Resources */,
+				157A4894159D51A3005F6DEF /* Tina Mascari.jpg in Resources */,
+				157A4896159D5218005F6DEF /* Makenzie Annis.jpg in Resources */,
+				157A4898159D536A005F6DEF /* Kate Annis.jpg in Resources */,
+				157A48A4159D5775005F6DEF /* cellBg.png in Resources */,
+				157A48A5159D5775005F6DEF /* customcellleft.png in Resources */,
+				157A48A6159D5775005F6DEF /* customcellright.png in Resources */,
+				157A48AA159D5775005F6DEF /* Icon.png in Resources */,
+				157A48AF159D5A3A005F6DEF /* detail.png in Resources */,
+				157A48B0159D5A3A005F6DEF /* info.png in Resources */,
+				157A48B8159E2759005F6DEF /* Icon@2x.png in Resources */,
+				157A48BB159E27B9005F6DEF /* default@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		157A47F4159BEC50005F6DEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157A4809159BEC50005F6DEF /* main.m in Sources */,
+				157A480D159BEC50005F6DEF /* AppDelegate.m in Sources */,
+				157A4810159BEC50005F6DEF /* ViewController.m in Sources */,
+				157A483E159D1AEE005F6DEF /* CustomTableCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		157A4805159BEC50005F6DEF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				157A4806159BEC50005F6DEF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		157A4811159BEC50005F6DEF /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				157A4812159BEC50005F6DEF /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		157A4814159BEC50005F6DEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		157A4815159BEC50005F6DEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		157A4817159BEC50005F6DEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Project1/Project1-Prefix.pch";
+				INFOPLIST_FILE = "Project1/Project1-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		157A4818159BEC50005F6DEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Project1/Project1-Prefix.pch";
+				INFOPLIST_FILE = "Project1/Project1-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		157A47F2159BEC50005F6DEF /* Build configuration list for PBXProject "Project1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				157A4814159BEC50005F6DEF /* Debug */,
+				157A4815159BEC50005F6DEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		157A4816159BEC50005F6DEF /* Build configuration list for PBXNativeTarget "Project1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				157A4817159BEC50005F6DEF /* Debug */,
+				157A4818159BEC50005F6DEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 157A47EF159BEC50005F6DEF /* Project object */;
+}
