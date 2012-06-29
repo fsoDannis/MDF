@@ -8,10 +8,15 @@
 {
     IBOutlet UITableView *tableView;
     NSMutableArray *myArray;
+    IBOutlet UIView *loadScreen;
+    IBOutlet UIView *detailScreen;
+    IBOutlet UILabel *detailName;
+    IBOutlet UILabel *detailAge;
+    IBOutlet UIImageView *detailImage;
     
 }
 - (IBAction)Edit:(id)sender;
-
+- (IBAction)Done:(id)sender;
 
 
 

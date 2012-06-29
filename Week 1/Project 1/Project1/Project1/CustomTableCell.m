@@ -3,7 +3,7 @@
 //  Copyright (c) 2012. All rights reserved.
 
 
-#import "DetailView.h"
+
 #import "ViewController.h"
 #import "CustomTableCell.h"
 

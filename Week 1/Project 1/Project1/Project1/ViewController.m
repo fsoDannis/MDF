@@ -2,7 +2,7 @@
 //  Created by Dan Annis on 6/28/12.
 //  Copyright (c) 2012. All rights reserved.
 
-#import "DetailView.h"
+
 #import "ViewController.h"
 #import "CustomTableCell.h"
 
@@ -18,6 +18,8 @@
 
 - (void)viewDidLoad
 {
+    
+     detailScreen.frame = CGRectMake(-320.0f, 0.0f, detailScreen.frame.size.width, detailScreen.frame.size.height);
     
     myArray = [[NSMutableArray alloc] initWithObjects:
                  @"Dan",
@@ -118,5 +120,14 @@
     NSLog(@"Index Row = %d Index name= %@",indexPath.row, [myArray objectAtIndex:indexPath.row]);
 }
 
+
+- (IBAction)Done:(id)sender
+{
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:2.0];
+
+    detailScreen.frame = CGRectMake(-320.0f, 0.0f, detailScreen.frame.size.width, detailScreen.frame.size.height);
+    [UIView commitAnimations];
+}
 
 @end
