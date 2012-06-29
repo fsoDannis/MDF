@@ -22,27 +22,27 @@
     detailScreen.frame = CGRectMake(-320.0f, 0.0f, detailScreen.frame.size.width, detailScreen.frame.size.height);
     
     myArray = [[NSMutableArray alloc] initWithObjects:
-                 @"Dan",
-                 @"Emily",
-                 @"Alex",
-                 @"Makenzie",
-                 @"Chris",
-                 @"Sarah",
-                 @"Natalie",
-                 @"Kate",
-                 @"Max",
-                 @"Angela",
-                 @"Bobby",
-                 @"Issac",
-                 @"Dominick",
-                 @"Lucas",
-                 @"Anthony",
-                 @"Andrew",
-                 @"Stephanie",
-                 @"Lynn",
-                 @"Ken",
-                 @"Tina",
-                 @"Jeff",
+                 @"Dan Annis",
+                 @"Emily Annis",
+                 @"Alex Annis",
+                 @"Makenzie Annis",
+                 @"Chris Annis",
+                 @"Sarah Annis",
+                 @"Natalie Annis",
+                 @"Kate Annis",
+                 @"Max Annis",
+                 @"Angela Frisch",
+                 @"Bobby  Frisch",
+                 @"Issac Frisch",
+                 @"Dominick Frisch",
+                 @"Lucas Frisch",
+                 @"Anthony Annis",
+                 @"Andrew Annis",
+                 @"Stephanie Mascari",
+                 @"Lynn Annis",
+                 @"Ken Annis",
+                 @"Tina Mascari",
+                 @"Jeff  Mascari",
                  nil];
     
     [super viewDidLoad];
@@ -117,16 +117,19 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+
+    //NSLog(@"Index Row = %d Index name= %@",indexPath.row, [myArray objectAtIndex:indexPath.row]);
     
+    NSString *imageLink = @".jpg";
+    NSString *imageTag =  [NSString stringWithFormat:@"%@%@",[myArray objectAtIndex:indexPath.row],imageLink];
+    detailName.text = [myArray objectAtIndex:indexPath.row];
+    detailImage.image = [UIImage imageNamed:imageTag];
     
     [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:2.0];
+    [UIView setAnimationDuration:1.0];
     detailScreen.frame = CGRectMake(0.0f, 0.0f, detailScreen.frame.size.width, detailScreen.frame.size.height);
     
     [UIView commitAnimations];
-    
-    NSLog(@"Index Row = %d Index name= %@",indexPath.row, [myArray objectAtIndex:indexPath.row]);
-    
 
 }
 

@@ -11,7 +11,6 @@
     IBOutlet UIView *loadScreen;
     IBOutlet UIView *detailScreen;
     IBOutlet UILabel *detailName;
-    IBOutlet UILabel *detailAge;
     IBOutlet UIImageView *detailImage;
     
 }

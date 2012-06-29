@@ -26,6 +26,8 @@
 		157A4838159D0F17005F6DEF /* customcellright.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A4837159D0F17005F6DEF /* customcellright.png */; };
 		157A483E159D1AEE005F6DEF /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 157A483D159D1AEE005F6DEF /* CustomTableCell.m */; };
 		157A485F159D3949005F6DEF /* detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A485E159D3949005F6DEF /* detail.png */; };
+		157A4872159D4922005F6DEF /* Emily Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4871159D4922005F6DEF /* Emily Annis.jpg */; };
+		157A4874159D4BD9005F6DEF /* Dan Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4873159D4BD9005F6DEF /* Dan Annis.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		157A483C159D1AEE005F6DEF /* CustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableCell.h; sourceTree = "<group>"; };
 		157A483D159D1AEE005F6DEF /* CustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableCell.m; sourceTree = "<group>"; };
 		157A485E159D3949005F6DEF /* detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = detail.png; path = "../../../../../../../Dropbox/icon/App Icon [Rounded]/detail.png"; sourceTree = "<group>"; };
+		157A4871159D4922005F6DEF /* Emily Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Emily Annis.jpg"; sourceTree = "<group>"; };
+		157A4873159D4BD9005F6DEF /* Dan Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Dan Annis.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,9 @@
 		157A4802159BEC50005F6DEF /* Project1 */ = {
 			isa = PBXGroup;
 			children = (
+				157A4873159D4BD9005F6DEF /* Dan Annis.jpg */,
+				157A4871159D4922005F6DEF /* Emily Annis.jpg */,
+				157A4870159D4806005F6DEF /* UIImages */,
 				157A4837159D0F17005F6DEF /* customcellright.png */,
 				157A4835159D0DFA005F6DEF /* cellBg.png */,
 				157A4833159D0D5A005F6DEF /* customcellleft.png */,
@@ -141,6 +148,13 @@
 			);
 			name = Resources;
 			path = Project1;
+			sourceTree = "<group>";
+		};
+		157A4870159D4806005F6DEF /* UIImages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UIImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +219,8 @@
 				157A4836159D0DFA005F6DEF /* cellBg.png in Resources */,
 				157A4838159D0F17005F6DEF /* customcellright.png in Resources */,
 				157A485F159D3949005F6DEF /* detail.png in Resources */,
+				157A4872159D4922005F6DEF /* Emily Annis.jpg in Resources */,
+				157A4874159D4BD9005F6DEF /* Dan Annis.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
