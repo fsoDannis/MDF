@@ -30,12 +30,11 @@
                  @"Sarah Annis",
                  @"Natalie Annis",
                  @"Kate Annis",
-                 @"Max Annis",
+                 @"Chad Cunningham",
                  @"Angela Frisch",
-                 @"Bobby  Frisch",
-                 @"Issac Frisch",
-                 @"Dominick Frisch",
-                 @"Lucas Frisch",
+                 @"Bobby Frisch",
+                 @"Isaac Frisch",
+                 @"Saif Iqbal",
                  @"Anthony Annis",
                  @"Andrew Annis",
                  @"Stephanie Mascari",
@@ -137,7 +136,7 @@
 - (IBAction)Done:(id)sender
 {
     [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:2.0];
+    [UIView setAnimationDuration:1.0];
 
     detailScreen.frame = CGRectMake(-320.0f, 0.0f, detailScreen.frame.size.width, detailScreen.frame.size.height);
     [UIView commitAnimations];

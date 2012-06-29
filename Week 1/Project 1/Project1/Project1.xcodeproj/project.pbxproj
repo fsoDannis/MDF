@@ -28,6 +28,24 @@
 		157A485F159D3949005F6DEF /* detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 157A485E159D3949005F6DEF /* detail.png */; };
 		157A4872159D4922005F6DEF /* Emily Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4871159D4922005F6DEF /* Emily Annis.jpg */; };
 		157A4874159D4BD9005F6DEF /* Dan Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4873159D4BD9005F6DEF /* Dan Annis.jpg */; };
+		157A4885159D51A3005F6DEF /* Alex Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4875159D51A2005F6DEF /* Alex Annis.jpg */; };
+		157A4886159D51A3005F6DEF /* Andrew Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4876159D51A2005F6DEF /* Andrew Annis.jpg */; };
+		157A4887159D51A3005F6DEF /* Angela Frisch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4877159D51A2005F6DEF /* Angela Frisch.jpg */; };
+		157A4888159D51A3005F6DEF /* Anthony Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4878159D51A2005F6DEF /* Anthony Annis.jpg */; };
+		157A4889159D51A3005F6DEF /* Bobby Frisch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4879159D51A2005F6DEF /* Bobby Frisch.jpg */; };
+		157A488A159D51A3005F6DEF /* Chad Cunningham.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A487A159D51A2005F6DEF /* Chad Cunningham.jpg */; };
+		157A488B159D51A3005F6DEF /* Chris Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A487B159D51A2005F6DEF /* Chris Annis.jpg */; };
+		157A488C159D51A3005F6DEF /* Isaac Frisch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A487C159D51A3005F6DEF /* Isaac Frisch.jpg */; };
+		157A488D159D51A3005F6DEF /* Jeff Mascari.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A487D159D51A3005F6DEF /* Jeff Mascari.jpg */; };
+		157A488E159D51A3005F6DEF /* Ken Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A487E159D51A3005F6DEF /* Ken Annis.jpg */; };
+		157A488F159D51A3005F6DEF /* Lynn Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A487F159D51A3005F6DEF /* Lynn Annis.jpg */; };
+		157A4890159D51A3005F6DEF /* Natalie Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4880159D51A3005F6DEF /* Natalie Annis.jpg */; };
+		157A4891159D51A3005F6DEF /* Saif Iqbal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4881159D51A3005F6DEF /* Saif Iqbal.jpg */; };
+		157A4892159D51A3005F6DEF /* Sarah Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4882159D51A3005F6DEF /* Sarah Annis.jpg */; };
+		157A4893159D51A3005F6DEF /* Stephanie Mascari.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4883159D51A3005F6DEF /* Stephanie Mascari.jpg */; };
+		157A4894159D51A3005F6DEF /* Tina Mascari.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4884159D51A3005F6DEF /* Tina Mascari.jpg */; };
+		157A4896159D5218005F6DEF /* Makenzie Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4895159D5218005F6DEF /* Makenzie Annis.jpg */; };
+		157A4898159D536A005F6DEF /* Kate Annis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 157A4897159D536A005F6DEF /* Kate Annis.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +76,24 @@
 		157A485E159D3949005F6DEF /* detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = detail.png; path = "../../../../../../../Dropbox/icon/App Icon [Rounded]/detail.png"; sourceTree = "<group>"; };
 		157A4871159D4922005F6DEF /* Emily Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Emily Annis.jpg"; sourceTree = "<group>"; };
 		157A4873159D4BD9005F6DEF /* Dan Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Dan Annis.jpg"; sourceTree = "<group>"; };
+		157A4875159D51A2005F6DEF /* Alex Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Alex Annis.jpg"; sourceTree = "<group>"; };
+		157A4876159D51A2005F6DEF /* Andrew Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Andrew Annis.jpg"; sourceTree = "<group>"; };
+		157A4877159D51A2005F6DEF /* Angela Frisch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Angela Frisch.jpg"; sourceTree = "<group>"; };
+		157A4878159D51A2005F6DEF /* Anthony Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Anthony Annis.jpg"; sourceTree = "<group>"; };
+		157A4879159D51A2005F6DEF /* Bobby Frisch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bobby Frisch.jpg"; sourceTree = "<group>"; };
+		157A487A159D51A2005F6DEF /* Chad Cunningham.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Chad Cunningham.jpg"; sourceTree = "<group>"; };
+		157A487B159D51A2005F6DEF /* Chris Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Chris Annis.jpg"; sourceTree = "<group>"; };
+		157A487C159D51A3005F6DEF /* Isaac Frisch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Isaac Frisch.jpg"; sourceTree = "<group>"; };
+		157A487D159D51A3005F6DEF /* Jeff Mascari.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jeff Mascari.jpg"; sourceTree = "<group>"; };
+		157A487E159D51A3005F6DEF /* Ken Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ken Annis.jpg"; sourceTree = "<group>"; };
+		157A487F159D51A3005F6DEF /* Lynn Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lynn Annis.jpg"; sourceTree = "<group>"; };
+		157A4880159D51A3005F6DEF /* Natalie Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Natalie Annis.jpg"; sourceTree = "<group>"; };
+		157A4881159D51A3005F6DEF /* Saif Iqbal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Saif Iqbal.jpg"; sourceTree = "<group>"; };
+		157A4882159D51A3005F6DEF /* Sarah Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sarah Annis.jpg"; sourceTree = "<group>"; };
+		157A4883159D51A3005F6DEF /* Stephanie Mascari.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Stephanie Mascari.jpg"; sourceTree = "<group>"; };
+		157A4884159D51A3005F6DEF /* Tina Mascari.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tina Mascari.jpg"; sourceTree = "<group>"; };
+		157A4895159D5218005F6DEF /* Makenzie Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Makenzie Annis.jpg"; sourceTree = "<group>"; };
+		157A4897159D536A005F6DEF /* Kate Annis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Kate Annis.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +141,24 @@
 		157A4802159BEC50005F6DEF /* Project1 */ = {
 			isa = PBXGroup;
 			children = (
+				157A4895159D5218005F6DEF /* Makenzie Annis.jpg */,
+				157A4875159D51A2005F6DEF /* Alex Annis.jpg */,
+				157A4876159D51A2005F6DEF /* Andrew Annis.jpg */,
+				157A4877159D51A2005F6DEF /* Angela Frisch.jpg */,
+				157A4878159D51A2005F6DEF /* Anthony Annis.jpg */,
+				157A4897159D536A005F6DEF /* Kate Annis.jpg */,
+				157A4879159D51A2005F6DEF /* Bobby Frisch.jpg */,
+				157A487A159D51A2005F6DEF /* Chad Cunningham.jpg */,
+				157A487B159D51A2005F6DEF /* Chris Annis.jpg */,
+				157A487C159D51A3005F6DEF /* Isaac Frisch.jpg */,
+				157A487D159D51A3005F6DEF /* Jeff Mascari.jpg */,
+				157A487E159D51A3005F6DEF /* Ken Annis.jpg */,
+				157A487F159D51A3005F6DEF /* Lynn Annis.jpg */,
+				157A4880159D51A3005F6DEF /* Natalie Annis.jpg */,
+				157A4881159D51A3005F6DEF /* Saif Iqbal.jpg */,
+				157A4882159D51A3005F6DEF /* Sarah Annis.jpg */,
+				157A4883159D51A3005F6DEF /* Stephanie Mascari.jpg */,
+				157A4884159D51A3005F6DEF /* Tina Mascari.jpg */,
 				157A4873159D4BD9005F6DEF /* Dan Annis.jpg */,
 				157A4871159D4922005F6DEF /* Emily Annis.jpg */,
 				157A4870159D4806005F6DEF /* UIImages */,
@@ -221,6 +275,24 @@
 				157A485F159D3949005F6DEF /* detail.png in Resources */,
 				157A4872159D4922005F6DEF /* Emily Annis.jpg in Resources */,
 				157A4874159D4BD9005F6DEF /* Dan Annis.jpg in Resources */,
+				157A4885159D51A3005F6DEF /* Alex Annis.jpg in Resources */,
+				157A4886159D51A3005F6DEF /* Andrew Annis.jpg in Resources */,
+				157A4887159D51A3005F6DEF /* Angela Frisch.jpg in Resources */,
+				157A4888159D51A3005F6DEF /* Anthony Annis.jpg in Resources */,
+				157A4889159D51A3005F6DEF /* Bobby Frisch.jpg in Resources */,
+				157A488A159D51A3005F6DEF /* Chad Cunningham.jpg in Resources */,
+				157A488B159D51A3005F6DEF /* Chris Annis.jpg in Resources */,
+				157A488C159D51A3005F6DEF /* Isaac Frisch.jpg in Resources */,
+				157A488D159D51A3005F6DEF /* Jeff Mascari.jpg in Resources */,
+				157A488E159D51A3005F6DEF /* Ken Annis.jpg in Resources */,
+				157A488F159D51A3005F6DEF /* Lynn Annis.jpg in Resources */,
+				157A4890159D51A3005F6DEF /* Natalie Annis.jpg in Resources */,
+				157A4891159D51A3005F6DEF /* Saif Iqbal.jpg in Resources */,
+				157A4892159D51A3005F6DEF /* Sarah Annis.jpg in Resources */,
+				157A4893159D51A3005F6DEF /* Stephanie Mascari.jpg in Resources */,
+				157A4894159D51A3005F6DEF /* Tina Mascari.jpg in Resources */,
+				157A4896159D5218005F6DEF /* Makenzie Annis.jpg in Resources */,
+				157A4898159D536A005F6DEF /* Kate Annis.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
