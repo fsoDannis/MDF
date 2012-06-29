@@ -41,7 +41,7 @@
                  @"Lynn Annis",
                  @"Ken Annis",
                  @"Tina Mascari",
-                 @"Jeff  Mascari",
+                 @"Jeff Mascari",
                  nil];
     
     [super viewDidLoad];
