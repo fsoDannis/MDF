@@ -8,10 +8,12 @@
 {
     IBOutlet UITableView *tableView;
     NSMutableArray *myArray;
+    NSMutableArray *smallArray;
     IBOutlet UIView *loadScreen;
     IBOutlet UIView *detailScreen;
     IBOutlet UIView *infoScreen;
     IBOutlet UILabel *detailName;
+    IBOutlet UILabel *smallName;
     IBOutlet UIImageView *detailImage;
     
 }

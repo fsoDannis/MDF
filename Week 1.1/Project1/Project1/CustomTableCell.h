@@ -5,5 +5,11 @@
 #import <UIKit/UIKit.h>
 
 @interface CustomTableCell : UITableViewCell
+{
+    IBOutlet UILabel *textLabel;    
+        IBOutlet UILabel *smallLabel; 
 
+}
+@property (strong, nonatomic)IBOutlet UILabel *textLabel;
+@property (strong, nonatomic)IBOutlet UILabel *smallLabel;
 @end
