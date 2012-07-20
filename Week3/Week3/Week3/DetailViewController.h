@@ -7,9 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/Mapkit.h>
+
 
 @interface DetailViewController : UIViewController
-@property (nonatomic, strong) IBOutlet UILabel *recipeLabel;
-@property (nonatomic, strong) NSString *recipeName;
+{
+    IBOutlet MKMapView *mapView; 
+
+
+}
+@property (nonatomic, strong) IBOutlet UILabel *nameLabel;
+@property (nonatomic, strong) NSString *nameName;
+@property (nonatomic, strong) IBOutlet UILabel *latlonLabel;
+@property (nonatomic, strong) NSString *latlonName;
+@property (nonatomic, strong) IBOutlet UILabel *stateLabel;
+@property (nonatomic, strong) NSString *stateName;
+
+
 
 @end

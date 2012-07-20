@@ -6,7 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Recipes-->
+        <!--View Controller - Survivors-->
         <scene sceneID="5">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -28,7 +28,7 @@
                                     </connections>
                                 </searchBar>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RecipeCell" id="7DF-zU-urG">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SurvivorCell" id="7DF-zU-urG">
                                         <rect key="frame" x="0.0" y="80" width="320" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -49,7 +49,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Recipes" id="DVc-qO-jI1"/>
+                    <navigationItem key="navigationItem" title="Survivors" id="DVc-qO-jI1"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="gHd-JP-rZ5" id="6H1-wD-21l"/>
                         <outlet property="tableView" destination="iqZ-DA-c2Z" id="eyX-Tf-DPd"/>
@@ -76,10 +76,36 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="mZn-El-Ejx">
-                                <rect key="frame" x="0.0" y="156" width="320" height="62"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" showsUserLocation="YES" id="sut-1K-Waj">
+                                <rect key="frame" x="0.0" y="83" width="320" height="333"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </mapView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="*Located*" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="mZn-El-Ejx">
+                                <rect key="frame" x="0.0" y="93" width="320" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="21"/>
+                                <color key="textColor" red="0.41029405699999999" green="0.75346759240000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Location:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="WJe-7p-oPP">
+                                <rect key="frame" x="137" y="0.0" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="City, State" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="rWs-Du-ke9">
+                                <rect key="frame" x="-2" y="26" width="330" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="latitude, longitude" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="CQG-Id-dL4">
+                                <rect key="frame" x="0.0" y="46" width="320" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -88,7 +114,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="xfJ-YH-x23"/>
                     <connections>
-                        <outlet property="recipeLabel" destination="mZn-El-Ejx" id="ssr-wA-Ahc"/>
+                        <outlet property="latlonLabel" destination="CQG-Id-dL4" id="fyb-kT-Ql1"/>
+                        <outlet property="mapView" destination="sut-1K-Waj" id="YXD-3X-pbl"/>
+                        <outlet property="stateLabel" destination="rWs-Du-ke9" id="9en-EL-2xy"/>
                     </connections>
                 </viewController>
             </objects>
@@ -99,11 +127,12 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L0S-1m-M7f" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="Won-vx-xLL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="featured" id="cJM-v4-paj"/>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="cJM-v4-paj"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8Ke-lz-nsV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -118,9 +147,10 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rzx-UP-9I9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController definesPresentationContext="YES" id="luG-kn-y6c" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="more" id="mq3-XS-Ixs"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="mq3-XS-Ixs"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="LcQ-iu-ovw">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                     </navigationBar>
                     <connections>
                         <segue destination="peX-cL-Coz" kind="relationship" relationship="rootViewController" id="dO0-vK-Lay"/>
@@ -129,7 +159,7 @@
             </objects>
             <point key="canvasLocation" x="824" y="759"/>
         </scene>
-        <!--About View Controller - About-->
+        <!--About View Controller - Located Survivors-->
         <scene sceneID="ttx-AB-xq9">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G7a-XR-688" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -138,17 +168,16 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" id="OIS-KX-4jd">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="kXs-vn-kPe">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="About" id="NbO-rL-EEJ"/>
+                    <navigationItem key="navigationItem" title="Located Survivors" id="NbO-rL-EEJ"/>
                     <connections>
-                        <outlet property="webView" destination="OIS-KX-4jd" id="ddc-1F-dUA"/>
+                        <outlet property="mapView" destination="kXs-vn-kPe" id="Sar-Vo-k1F"/>
                     </connections>
                 </viewController>
             </objects>
@@ -177,18 +206,22 @@
         <class className="AboutViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
             </relationships>
         </class>
         <class className="DetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="recipeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="latlonLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="stateLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
+                <relationship kind="action" name="Edit:"/>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>
         </class>

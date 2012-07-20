@@ -18,6 +18,8 @@
 		1542763E15B78BF0003582C2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1542763D15B78BF0003582C2 /* DetailViewController.m */; };
 		1542764115B7938E003582C2 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1542764015B7938E003582C2 /* AboutViewController.m */; };
 		1542765015B7A3A9003582C2 /* m.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1542764F15B7A3A9003582C2 /* m.plist */; };
+		1542767415B8D765003582C2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1542767315B8D765003582C2 /* MapKit.framework */; };
+		1542767715B8DDCE003582C2 /* mapAnnotations.m in Sources */ = {isa = PBXBuildFile; fileRef = 1542767615B8DDCE003582C2 /* mapAnnotations.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,9 @@
 		1542763F15B7938E003582C2 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		1542764015B7938E003582C2 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		1542764F15B7A3A9003582C2 /* m.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = m.plist; sourceTree = "<group>"; };
+		1542767315B8D765003582C2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1542767515B8DDCE003582C2 /* mapAnnotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapAnnotations.h; sourceTree = "<group>"; };
+		1542767615B8DDCE003582C2 /* mapAnnotations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mapAnnotations.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1542767415B8D765003582C2 /* MapKit.framework in Frameworks */,
 				1542761D15B7861A003582C2 /* UIKit.framework in Frameworks */,
 				1542761F15B7861A003582C2 /* Foundation.framework in Frameworks */,
 				1542762115B7861A003582C2 /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +81,7 @@
 		1542761B15B7861A003582C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1542767315B8D765003582C2 /* MapKit.framework */,
 				1542761C15B7861A003582C2 /* UIKit.framework */,
 				1542761E15B7861A003582C2 /* Foundation.framework */,
 				1542762015B7861A003582C2 /* CoreGraphics.framework */,
@@ -85,6 +92,7 @@
 		1542762215B7861A003582C2 /* Week3 */ = {
 			isa = PBXGroup;
 			children = (
+				1542767215B8464F003582C2 /* images */,
 				1542762B15B7861A003582C2 /* AppDelegate.h */,
 				1542762C15B7861A003582C2 /* AppDelegate.m */,
 				1542764F15B7A3A9003582C2 /* m.plist */,
@@ -96,6 +104,8 @@
 				1542763D15B78BF0003582C2 /* DetailViewController.m */,
 				1542763F15B7938E003582C2 /* AboutViewController.h */,
 				1542764015B7938E003582C2 /* AboutViewController.m */,
+				1542767515B8DDCE003582C2 /* mapAnnotations.h */,
+				1542767615B8DDCE003582C2 /* mapAnnotations.m */,
 			);
 			path = Week3;
 			sourceTree = "<group>";
@@ -109,6 +119,13 @@
 				1542762A15B7861A003582C2 /* Week3-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1542767215B8464F003582C2 /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +196,7 @@
 				1542763315B7861A003582C2 /* ViewController.m in Sources */,
 				1542763E15B78BF0003582C2 /* DetailViewController.m in Sources */,
 				1542764115B7938E003582C2 /* AboutViewController.m in Sources */,
+				1542767715B8DDCE003582C2 /* mapAnnotations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

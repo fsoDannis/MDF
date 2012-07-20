@@ -13,29 +13,30 @@
 @end
 
 @implementation ViewController{
-    NSMutableArray *recipes;
     NSArray *searchResults;
 }
 @synthesize tableView;
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    //recipes = [NSMutableArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
-
-    // Find out the path of recipes.plist
-    NSString *path = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"m" ofType:@"plist"]];    
+    [super viewDidLoad];    
     
-    // Load the file content and read the data into arrays
-    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
-    recipes = [dict objectForKey:@"fullName"];
-    //thumbnails = [dict objectForKey:@"Thumbnail"];
-   // prepTime = [dict objectForKey:@"PrepTime"];
+    NSString *myListPath = [[NSBundle mainBundle] pathForResource:@"m" ofType:@"plist"];
+    tableData = [[NSMutableArray alloc] initWithContentsOfFile:myListPath];
+    NSLog(@"%@",tableData);
+    
+    
+    //Add the Edit Button and call the method Edit:
+    UIBarButtonItem *EditButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(Edit:)];
+    self.navigationItem.rightBarButtonItem = EditButton;
+    
+    
 }
+
 
 - (void)viewDidUnload
 {
+   
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -46,13 +47,16 @@
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         return [searchResults count];
         
     } else {
-        return [recipes count];
+      
+        return [tableData count];
         
     }
+    
 }
 
 
@@ -61,11 +65,12 @@
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         [self performSegueWithIdentifier: @"showDetailView" sender: self];        
     }
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *simpleTableIdentifier = @"RecipeCell";
+    static NSString *simpleTableIdentifier = @"SurvivorCell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
@@ -74,28 +79,16 @@
     }
     
     if (tableView == self.searchDisplayController.searchResultsTableView) {
-        cell.textLabel.text = [searchResults objectAtIndex:indexPath.row];
+        cell.textLabel.text = [[searchResults objectAtIndex:indexPath.row] objectForKey:@"fullName"];
     } else {
-        cell.textLabel.text = [recipes objectAtIndex:indexPath.row];
+        cell.textLabel.text = [[tableData objectAtIndex:indexPath.row] objectForKey:@"fullName"];
+        
+        
     }
     
     return cell;
 }
 
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    static NSString *simpleTableIdentifier = @"RecipeCell";
-//    
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-//    
-//    if (cell == nil) {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
-//    }
-//    
-//    cell.textLabel.text = [recipes objectAtIndex:indexPath.row];
-//    cell.imageView.image = [UIImage imageNamed:@""];
-//    return cell;
-//}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showDetailView"]) {
@@ -105,11 +98,28 @@
         
         if ([self.searchDisplayController isActive]) {
             indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
-            destViewController.recipeName = [searchResults objectAtIndex:indexPath.row];
+            destViewController.nameName = [[searchResults objectAtIndex:indexPath.row] objectForKey:@"fullName"];
+            NSString *city = [[tableData objectAtIndex:indexPath.row] objectForKey:@"city"];
+            NSString *state = [[tableData objectAtIndex:indexPath.row] objectForKey:@"state"];
+            NSString *fullLocation =  [NSString stringWithFormat:@"%@, %@",city,state];
+            destViewController.stateName = fullLocation;
+            destViewController.title = [[tableData objectAtIndex:indexPath.row] objectForKey:@"fullName"];
+            // Hide bottom tab bar in the detail view
+           destViewController.hidesBottomBarWhenPushed = YES;
             
         } else {
+           
             indexPath = [self.tableView indexPathForSelectedRow];
-            destViewController.recipeName = [recipes objectAtIndex:indexPath.row];
+            NSString *city = [[tableData objectAtIndex:indexPath.row] objectForKey:@"city"];
+            NSString *state = [[tableData objectAtIndex:indexPath.row] objectForKey:@"state"];
+            NSString *lat = [[tableData objectAtIndex:indexPath.row] objectForKey:@"lattitude"];
+            NSString *lon = [[tableData objectAtIndex:indexPath.row] objectForKey:@"longitude"];
+            NSString *fullLocation =  [NSString stringWithFormat:@"%@, %@",city,state];
+            NSString *fullLatLon =  [NSString stringWithFormat:@"%@, %@",lat,lon];
+            destViewController.stateName = fullLocation;
+            destViewController.latlonName = fullLatLon;
+            destViewController.title = [[tableData objectAtIndex:indexPath.row] objectForKey:@"fullName"];
+            
             // Hide bottom tab bar in the detail view
             destViewController.hidesBottomBarWhenPushed = YES;
         }
@@ -120,7 +130,8 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [recipes removeObjectAtIndex:indexPath.row];
+    [tableData removeObjectAtIndex:indexPath.row];
+
     [tableView reloadData];
 }
 
@@ -130,7 +141,7 @@
                                     predicateWithFormat:@"SELF contains[cd] %@",
                                     searchText];
     
-    searchResults = [recipes filteredArrayUsingPredicate:resultPredicate];
+    searchResults = [tableData filteredArrayUsingPredicate:resultPredicate];
 }
 
 -(BOOL)searchDisplayController:(UISearchDisplayController *)controller
@@ -142,6 +153,16 @@ shouldReloadTableForSearchString:(NSString *)searchString
                                                      selectedScopeButtonIndex]]];
     
     return YES;
+}
+
+- (IBAction)Edit:(id)sender
+{
+    if (tableView.editing == NO)
+    {
+        [tableView setEditing:YES];
+    }
+    else
+        [tableView setEditing:NO];
 }
 
 @end

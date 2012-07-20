@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/Mapkit.h>
 
 @interface AboutViewController : UIViewController
+{
+    IBOutlet MKMapView *mapView;
+    NSArray *MapAnnotations;
+}
 
-@property (nonatomic, strong) IBOutlet UIWebView *webView;
 
 @end
