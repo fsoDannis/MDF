@@ -65,7 +65,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1350" y="128"/>
+            <point key="canvasLocation" x="1680" y="262"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="yZi-jh-MfF">
@@ -120,7 +120,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1793" y="128"/>
+            <point key="canvasLocation" x="2123" y="262"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PNg-sW-ZuB">
@@ -140,7 +140,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="824" y="128"/>
+            <point key="canvasLocation" x="1154" y="262"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Osg-Xd-dlW">
@@ -157,7 +157,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="824" y="759"/>
+            <point key="canvasLocation" x="1154" y="893"/>
         </scene>
         <!--About View Controller - Located Survivors-->
         <scene sceneID="ttx-AB-xq9">
@@ -181,7 +181,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1357" y="759"/>
+            <point key="canvasLocation" x="1687" y="893"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Yvm-Y1-6R1">
@@ -199,33 +199,9 @@
                     </connections>
                 </tabBarController>
             </objects>
-            <point key="canvasLocation" x="138" y="208"/>
+            <point key="canvasLocation" x="468" y="342"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="AboutViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
-            </relationships>
-        </class>
-        <class className="DetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="latlonLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
-                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="stateLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="Edit:"/>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

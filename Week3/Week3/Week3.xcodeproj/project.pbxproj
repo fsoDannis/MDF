@@ -20,6 +20,12 @@
 		1542765015B7A3A9003582C2 /* m.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1542764F15B7A3A9003582C2 /* m.plist */; };
 		1542767415B8D765003582C2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1542767315B8D765003582C2 /* MapKit.framework */; };
 		1542767715B8DDCE003582C2 /* mapAnnotations.m in Sources */ = {isa = PBXBuildFile; fileRef = 1542767615B8DDCE003582C2 /* mapAnnotations.m */; };
+		1542767E15B90979003582C2 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1542767C15B90979003582C2 /* Icon.png */; };
+		1542767F15B90979003582C2 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1542767D15B90979003582C2 /* Icon@2x.png */; };
+		1542768115B90985003582C2 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1542768015B90985003582C2 /* Icon.png */; };
+		1542768315B90993003582C2 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1542768215B90993003582C2 /* Icon@2x.png */; };
+		1542768615B90AFD003582C2 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1542768415B90AFD003582C2 /* default.png */; };
+		1542768715B90AFD003582C2 /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1542768515B90AFD003582C2 /* default@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +50,12 @@
 		1542767315B8D765003582C2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		1542767515B8DDCE003582C2 /* mapAnnotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapAnnotations.h; sourceTree = "<group>"; };
 		1542767615B8DDCE003582C2 /* mapAnnotations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mapAnnotations.m; sourceTree = "<group>"; };
+		1542767C15B90979003582C2 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = "../icons/App Icon [Rounded]/Icon.png"; sourceTree = "<group>"; };
+		1542767D15B90979003582C2 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../icons/App Icon [Rounded]/Icon@2x.png"; sourceTree = "<group>"; };
+		1542768015B90985003582C2 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		1542768215B90993003582C2 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		1542768415B90AFD003582C2 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = default.png; path = "../icons/App Icon [Rounded]/default.png"; sourceTree = "<group>"; };
+		1542768515B90AFD003582C2 /* default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "default@2x.png"; path = "../icons/App Icon [Rounded]/default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,12 @@
 		1542760D15B7861A003582C2 = {
 			isa = PBXGroup;
 			children = (
+				1542768415B90AFD003582C2 /* default.png */,
+				1542768515B90AFD003582C2 /* default@2x.png */,
+				1542768215B90993003582C2 /* Icon@2x.png */,
+				1542768015B90985003582C2 /* Icon.png */,
+				1542767C15B90979003582C2 /* Icon.png */,
+				1542767D15B90979003582C2 /* Icon@2x.png */,
 				1542762215B7861A003582C2 /* Week3 */,
 				1542761B15B7861A003582C2 /* Frameworks */,
 				1542761915B7861A003582C2 /* Products */,
@@ -181,6 +199,12 @@
 				1542762715B7861A003582C2 /* InfoPlist.strings in Resources */,
 				1542763015B7861A003582C2 /* MainStoryboard.storyboard in Resources */,
 				1542765015B7A3A9003582C2 /* m.plist in Resources */,
+				1542767E15B90979003582C2 /* Icon.png in Resources */,
+				1542767F15B90979003582C2 /* Icon@2x.png in Resources */,
+				1542768115B90985003582C2 /* Icon.png in Resources */,
+				1542768315B90993003582C2 /* Icon@2x.png in Resources */,
+				1542768615B90AFD003582C2 /* default.png in Resources */,
+				1542768715B90AFD003582C2 /* default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,7 +23,7 @@
     
     NSString *myListPath = [[NSBundle mainBundle] pathForResource:@"m" ofType:@"plist"];
     tableData = [[NSMutableArray alloc] initWithContentsOfFile:myListPath];
-    NSLog(@"%@",tableData);
+  //  NSLog(@"%@",tableData);
     
     
     //Add the Edit Button and call the method Edit:

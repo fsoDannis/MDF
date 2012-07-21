@@ -24,6 +24,7 @@
 
 
 
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -34,8 +35,16 @@
 }
 
 - (void)viewDidLoad
-{
 
+
+{
+     ////////////////////////////////////////////////////////////////////////////////////   
+    //////CANNOT ACCESS MY PLIST ARRAY TO DYNAMICALLY LOAD MY MAPS INTO MY DETAIL VIEW///
+    /////////////////////////////////////////////////////////////////////////////////////
+    
+    NSString *myListPath = [[NSBundle mainBundle] pathForResource:@"m" ofType:@"plist"];
+    myPList = [[NSMutableArray alloc] initWithContentsOfFile:myListPath];
+    NSLog(@"%@",myPList);
 
     nameLabel.text = nameName;
     latlonLabel.text = latlonName;
