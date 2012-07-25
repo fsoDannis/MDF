@@ -64,11 +64,11 @@
     region.span = span;
     mapView.region = region;
     
-    CLLocationCoordinate2D orlandoLocation;
-    orlandoLocation.latitude = 39.103118f;
-    orlandoLocation.longitude=-84.51202000000001f;
+    CLLocationCoordinate2D coord;
+    coord.latitude = 39.103118f;
+    coord.longitude=-84.51202000000001f;
     
-    mapAnnotations *annotation = [[mapAnnotations alloc] initWithTitle:@"Orlando" coord:orlandoLocation];
+    mapAnnotations *annotation = [[mapAnnotations alloc] initWithTitle:@"" coord:coord];
     
     if(annotation != nil)
     {

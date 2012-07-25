@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "DetailViewController.h"
+#import <CoreLocation/CoreLocation.h>
 @interface ViewController ()
 
 @end
