@@ -55,20 +55,20 @@
     span.latitudeDelta = 2.0f; //::::UNITS ACROSS::::
     span.longitudeDelta = 2.0f; //::::UNITS DOWN::::
     
-    CLLocationCoordinate2D location;
-    location.latitude = 39.103118f;
-    location.longitude = -84.51202000000001f;
-    
+//    CLLocationCoordinate2D location;
+//    location.latitude = 39.103118f;
+//    location.longitude = -84.51202000000001f;
+//    
     MKCoordinateRegion region;
     region.center = coord ;
     region.span = span;
     mapView.region = region;
     
-    CLLocationCoordinate2D coord;
-    coord.latitude = 39.103118f;
-    coord.longitude=-84.51202000000001f;
+//    CLLocationCoordinate2D coord;
+//    coord.latitude = 39.103118f;
+//    coord.longitude=-84.51202000000001f;
     
-    mapAnnotations *annotation = [[mapAnnotations alloc] initWithTitle:@"" coord:coord];
+    mapAnnotations *annotation = [[mapAnnotations alloc] initWithTitle:nameName coord:coord];
     
     if(annotation != nil)
     {
@@ -80,18 +80,30 @@
 	// Do any additional setup after loading the view.
 }
 
-- (MKAnnotationView*)mapView: (MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+- (MKAnnotationView*)mapView: (MKMapView *)mapView viewForAnnotation:(id)annotation
 {
-    MKPinAnnotationView *annView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"CustomPin"];
+    static NSString *pinIdentifier = @"CustomPin";
+    MKPinAnnotationView *annView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:pinIdentifier];
     
-    annView.animatesDrop = TRUE;
-    annView.canShowCallout = TRUE;
-    annView.calloutOffset = CGPointMake(-5, 5);
+    if (annView)
+    {
+        annView.annotation = annotation;
+    }
+    else
+    {
+        annView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:pinIdentifier];
+        annView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        annView.canShowCallout = YES;
+        annView.animatesDrop = TRUE;
+        annView.userInteractionEnabled = YES;
+    }
+    
     return annView;
 }
 
 - (void)viewDidUnload
 {
+    mapView.delegate=self;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

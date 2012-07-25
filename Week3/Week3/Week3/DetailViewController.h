@@ -10,7 +10,7 @@
 #import <MapKit/Mapkit.h>
 
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController <MKMapViewDelegate>
 {
     IBOutlet MKMapView *mapView; 
     NSMutableArray *myPList; 
@@ -18,11 +18,11 @@
 
 }
 @property (nonatomic, strong) IBOutlet UILabel *nameLabel;
-@property (nonatomic, strong) NSString *nameName;
+@property (nonatomic, retain) NSString *nameName;
 @property (nonatomic, strong) IBOutlet UILabel *latlonLabel;
-@property (nonatomic, strong) NSString *latlonName;
+@property (nonatomic, retain) NSString *latlonName;
 @property (nonatomic, strong) IBOutlet UILabel *stateLabel;
-@property (nonatomic, strong) NSString *stateName;
+@property (nonatomic, retain) NSString *stateName;
 @property (nonatomic, readwrite) CLLocationCoordinate2D coord;
 
 ;

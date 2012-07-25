@@ -122,6 +122,7 @@
             destViewController.latlonName = fullLatLon;
             destViewController.coord = CLLocationCoordinate2DMake([lat floatValue],[lon floatValue]);
             destViewController.title = [[tableData objectAtIndex:indexPath.row] objectForKey:@"fullName"];
+           // destViewController.nameName;
             
             // Hide bottom tab bar in the detail view
             destViewController.hidesBottomBarWhenPushed = YES;
