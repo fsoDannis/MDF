@@ -104,6 +104,7 @@
             NSString *fullLocation =  [NSString stringWithFormat:@"%@, %@",city,state];
             destViewController.stateName = fullLocation;
             destViewController.title = [[tableData objectAtIndex:indexPath.row] objectForKey:@"fullName"];
+            destViewController.coord = CLLocationCoordinate2DMake([lat floatValue],[lon floatValue]);
             // Hide bottom tab bar in the detail view
            destViewController.hidesBottomBarWhenPushed = YES;
             

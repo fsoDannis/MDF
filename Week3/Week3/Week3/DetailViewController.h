@@ -23,6 +23,7 @@
 @property (nonatomic, strong) NSString *latlonName;
 @property (nonatomic, strong) IBOutlet UILabel *stateLabel;
 @property (nonatomic, strong) NSString *stateName;
+@property (nonatomic, readwrite) CLLocationCoordinate2D coord;
 
 ;
 

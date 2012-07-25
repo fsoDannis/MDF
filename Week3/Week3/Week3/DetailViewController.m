@@ -21,7 +21,7 @@
 @synthesize latlonName;
 @synthesize stateLabel;
 @synthesize stateName;
-
+@synthesize coord;
 
 
 
@@ -60,7 +60,7 @@
     location.longitude = -84.51202000000001f;
     
     MKCoordinateRegion region;
-    region.center = location;
+    region.center = coord ;
     region.span = span;
     mapView.region = region;
     
