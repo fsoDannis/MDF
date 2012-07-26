@@ -18,7 +18,6 @@
 @synthesize customImage = _customImage;
 
 XMLParser *xmlParser;
-UIImage	 *twitterLogo;
 CGRect dateFrame;
 UILabel *dateLabel;
 CGRect contentFrame;
@@ -35,6 +34,8 @@ NSArray *myArray;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView 
 {
     return 1;
@@ -44,6 +45,7 @@ NSArray *myArray;
 {
     return [[xmlParser myData] count]; // Something with the word Tweets
 }
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath 
 {
@@ -103,11 +105,12 @@ NSArray *myArray;
 	return 55;
 }
 
-
+// Was moving to a new detail view until I hard coded the info above where i get the data
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showXMLDetailView"]) {
         NSIndexPath *indexPath = [self.ObjectTableView indexPathForSelectedRow];
         XMLDetailViewController *destViewController = segue.destinationViewController;
+        
        
        //Setting the Label Text to the name of the array that was selected 
         destViewController.XMLName = [myArray objectAtIndex:indexPath.row];
