@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "XMLParser.h"
-
+#import "ViewController.h"
+#import "Objects.h"
+#import "XMLDetailViewController.h"
+#import "XMLWebViewController.h"
 @implementation XMLParser 
 @synthesize myData = _myData;
 

@@ -7,6 +7,10 @@
 //
 
 #import "Objects.h"
+#import "ViewController.h"
+#import "XMLParser.h"
+#import "XMLDetailViewController.h"
+#import "XMLWebViewController.h"
 
 @implementation Objects
 

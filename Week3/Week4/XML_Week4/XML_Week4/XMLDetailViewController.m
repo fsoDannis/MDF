@@ -7,6 +7,10 @@
 //
 
 #import "XMLDetailViewController.h"
+#import "ViewController.h"
+#import "XMLParser.h"
+#import "Objects.h"
+#import "XMLWebViewController.h"
 
 @interface XMLDetailViewController ()
 @end

@@ -15,4 +15,5 @@
 
 @property (nonatomic, retain) UIImageView *customImage;
 @property (nonatomic, strong) IBOutlet UITableView *ObjectTableView;
+
 @end
