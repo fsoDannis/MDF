@@ -13,7 +13,7 @@
 
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, retain) UIImageView *customImage;
+
 @property (nonatomic, strong) IBOutlet UITableView *ObjectTableView;
 
 @end

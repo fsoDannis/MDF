@@ -18,7 +18,7 @@
 
 @implementation ViewController
 @synthesize ObjectTableView;
-@synthesize customImage = _customImage;
+
 
 
 XMLParser *xmlParser;
@@ -143,13 +143,16 @@ NSArray *myArray;
         NSIndexPath *indexPath = [self.ObjectTableView indexPathForSelectedRow];
         XMLDetailViewController *destViewController = segue.destinationViewController;
         Objects *currentObjects = [[xmlParser myData] objectAtIndex:indexPath.row];
-       
-       //Setting the Label Text to the name of the array that was selected 
+        //Setting the title of the Detail View to the object seleced in my array
+        destViewController.title = [currentObjects content];       
+        //setting Label to say hi to my Detail View!
         destViewController.XMLName = @"Hello....DetailView!!!";
         
-        
-        //Setting the title of the Detail View to the object seleced in my array
-        destViewController.title = [currentObjects content];
+        //Setting the Label Text to the name of the array that was selected 
+        destViewController.InfoName = [currentObjects content];
+        destViewController.CityName = [currentObjects city];
+        destViewController.StateName = [currentObjects dateCreated];
+        destViewController.DetailName = [currentObjects img];
         
     }
 }

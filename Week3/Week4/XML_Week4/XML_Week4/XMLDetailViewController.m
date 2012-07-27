@@ -18,6 +18,15 @@
 @implementation XMLDetailViewController
 @synthesize XMLName;
 @synthesize XMLLabel;
+@synthesize XMLCityLabel;
+@synthesize XMLInfoLabel;  
+@synthesize XMLStateLabel;
+@synthesize InfoName;
+@synthesize StateName;
+@synthesize CityName;
+@synthesize DetailLabel;
+@synthesize DetailName;
+
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -31,9 +40,12 @@
 
 - (void)viewDidLoad
 {
-    
+   
     XMLLabel.text = XMLName;
-    
+    XMLCityLabel.text = CityName;
+    XMLStateLabel.text= StateName;
+    XMLInfoLabel.text= InfoName;
+    DetailLabel.text = DetailName;
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
